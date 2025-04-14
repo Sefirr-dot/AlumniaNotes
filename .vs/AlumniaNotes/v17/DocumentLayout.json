@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A50797A7-507D-42CC-81D0-BF47F090DFA6}|AlumniaNotes\\AlumniaNotes.csproj|c:\\users\\usuario\\desktop\\dam2\\tfg\\proyecto\\alumnia notes\\alumnianotes\\alumnianotes\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A50797A7-507D-42CC-81D0-BF47F090DFA6}|AlumniaNotes\\AlumniaNotes.csproj|solutionrelative:alumnianotes\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A50797A7-507D-42CC-81D0-BF47F090DFA6}|AlumniaNotes\\AlumniaNotes.csproj|c:\\users\\usuario\\desktop\\dam2\\tfg\\proyecto\\alumnia notes\\alumnianotes\\alumnianotes\\alumnianotes.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A50797A7-507D-42CC-81D0-BF47F090DFA6}|AlumniaNotes\\AlumniaNotes.csproj|solutionrelative:alumnianotes\\alumnianotes.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A50797A7-507D-42CC-81D0-BF47F090DFA6}|AlumniaNotes\\AlumniaNotes.csproj|c:\\users\\usuario\\desktop\\dam2\\tfg\\proyecto\\alumnia notes\\alumnianotes\\alumnianotes\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A50797A7-507D-42CC-81D0-BF47F090DFA6}|AlumniaNotes\\AlumniaNotes.csproj|solutionrelative:alumnianotes\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 194,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AlumniaNotes",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\AlumniaNotes.csproj",
+              "RelativeDocumentMoniker": "AlumniaNotes\\AlumniaNotes.csproj",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\AlumniaNotes.csproj*",
+              "RelativeToolTip": "AlumniaNotes\\AlumniaNotes.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-14T20:24:48.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "AlumniaNotes\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\MainWindow.xaml",
+              "RelativeToolTip": "AlumniaNotes\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-14T19:52:44.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AlumniaNotes\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\MainWindow.xaml.cs",
+              "RelativeToolTip": "AlumniaNotes\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T19:52:42.913Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
