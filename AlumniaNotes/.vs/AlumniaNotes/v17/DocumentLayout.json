@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{103F76F0-E064-4F22-94F9-99E4713D55BD}|AlumniaNotes\\AlumniaNotes.csproj|c:\\users\\usuario\\desktop\\dam2\\tfg\\proyecto\\alumnia notes\\alumnianotes\\alumnianotes\\alumnianotes\\vistas\\calificacionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{103F76F0-E064-4F22-94F9-99E4713D55BD}|AlumniaNotes\\AlumniaNotes.csproj|solutionrelative:alumnianotes\\vistas\\calificacionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{103F76F0-E064-4F22-94F9-99E4713D55BD}|AlumniaNotes\\AlumniaNotes.csproj|c:\\users\\usuario\\desktop\\dam2\\tfg\\proyecto\\alumnia notes\\alumnianotes\\alumnianotes\\alumnianotes\\vistas\\asignaturaview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103F76F0-E064-4F22-94F9-99E4713D55BD}|AlumniaNotes\\AlumniaNotes.csproj|solutionrelative:alumnianotes\\vistas\\asignaturaview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103F76F0-E064-4F22-94F9-99E4713D55BD}|AlumniaNotes\\AlumniaNotes.csproj|c:\\users\\usuario\\desktop\\dam2\\tfg\\proyecto\\alumnia notes\\alumnianotes\\alumnianotes\\alumnianotes\\converters\\valueconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103F76F0-E064-4F22-94F9-99E4713D55BD}|AlumniaNotes\\AlumniaNotes.csproj|solutionrelative:alumnianotes\\converters\\valueconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{103F76F0-E064-4F22-94F9-99E4713D55BD}|AlumniaNotes\\AlumniaNotes.csproj|c:\\users\\usuario\\desktop\\dam2\\tfg\\proyecto\\alumnia notes\\alumnianotes\\alumnianotes\\alumnianotes\\vistas\\asignaturaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{103F76F0-E064-4F22-94F9-99E4713D55BD}|AlumniaNotes\\AlumniaNotes.csproj|solutionrelative:alumnianotes\\vistas\\asignaturaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ValueConverters.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\AlumniaNotes\\converters\\ValueConverters.cs",
-              "RelativeDocumentMoniker": "AlumniaNotes\\converters\\ValueConverters.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\AlumniaNotes\\converters\\ValueConverters.cs",
-              "RelativeToolTip": "AlumniaNotes\\converters\\ValueConverters.cs",
+              "DocumentIndex": 0,
+              "Title": "AsignaturaView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\AlumniaNotes\\vistas\\AsignaturaView.xaml.cs",
+              "RelativeDocumentMoniker": "AlumniaNotes\\vistas\\AsignaturaView.xaml.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\AlumniaNotes\\vistas\\AsignaturaView.xaml.cs",
+              "RelativeToolTip": "AlumniaNotes\\vistas\\AsignaturaView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T18:46:24.514Z",
+              "WhenOpened": "2025-05-01T21:03:36.486Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CalificacionView.xaml",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\AlumniaNotes\\vistas\\CalificacionView.xaml",
-              "RelativeDocumentMoniker": "AlumniaNotes\\vistas\\CalificacionView.xaml",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\AlumniaNotes\\vistas\\CalificacionView.xaml",
-              "RelativeToolTip": "AlumniaNotes\\vistas\\CalificacionView.xaml",
+              "DocumentIndex": 1,
+              "Title": "AsignaturaView.xaml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\AlumniaNotes\\vistas\\AsignaturaView.xaml",
+              "RelativeDocumentMoniker": "AlumniaNotes\\vistas\\AsignaturaView.xaml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\AlumniaNotes\\vistas\\AsignaturaView.xaml",
+              "RelativeToolTip": "AlumniaNotes\\vistas\\AsignaturaView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-01T18:46:04.367Z",
+              "WhenOpened": "2025-05-01T21:03:18.009Z",
               "EditorCaption": ""
             }
           ]

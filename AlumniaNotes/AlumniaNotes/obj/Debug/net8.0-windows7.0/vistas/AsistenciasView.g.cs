@@ -9,6 +9,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using AlumniaNotes;
+using AlumniaNotes.converters;
 using AlumniaNotes.vistas;
 using System;
 using System.Diagnostics;

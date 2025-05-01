@@ -1,12 +1,53 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{103F76F0-E064-4F22-94F9-99E4713D55BD}|AlumniaNotes\\AlumniaNotes.csproj|c:\\users\\usuario\\desktop\\dam2\\tfg\\proyecto\\alumnia notes\\alumnianotes\\alumnianotes\\alumnianotes\\vistas\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{103F76F0-E064-4F22-94F9-99E4713D55BD}|AlumniaNotes\\AlumniaNotes.csproj|solutionrelative:alumnianotes\\vistas\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103F76F0-E064-4F22-94F9-99E4713D55BD}|AlumniaNotes\\AlumniaNotes.csproj|c:\\users\\usuario\\desktop\\dam2\\tfg\\proyecto\\alumnia notes\\alumnianotes\\alumnianotes\\alumnianotes\\converters\\valueconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103F76F0-E064-4F22-94F9-99E4713D55BD}|AlumniaNotes\\AlumniaNotes.csproj|solutionrelative:alumnianotes\\converters\\valueconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ValueConverters.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\AlumniaNotes\\converters\\ValueConverters.cs",
+              "RelativeDocumentMoniker": "AlumniaNotes\\converters\\ValueConverters.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\AlumniaNotes\\converters\\ValueConverters.cs",
+              "RelativeToolTip": "AlumniaNotes\\converters\\ValueConverters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T20:52:34.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginView.xaml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\AlumniaNotes\\vistas\\LoginView.xaml",
+              "RelativeDocumentMoniker": "AlumniaNotes\\vistas\\LoginView.xaml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\DAM2\\tfg\\PROYECTO\\Alumnia Notes\\AlumniaNotes\\AlumniaNotes\\AlumniaNotes\\vistas\\LoginView.xaml",
+              "RelativeToolTip": "AlumniaNotes\\vistas\\LoginView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-01T20:47:30.051Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -3,10 +3,11 @@ C:\Users\Usuario\Desktop\DAM2\tfg\PROYECTO\Alumnia Notes\AlumniaNotes\AlumniaNot
 C:\Users\Usuario\Desktop\DAM2\tfg\PROYECTO\Alumnia Notes\AlumniaNotes\AlumniaNotes\AlumniaNotes\obj\Debug\net8.0-windows7.0\vistas\AlumnosView.g.cs
 C:\Users\Usuario\Desktop\DAM2\tfg\PROYECTO\Alumnia Notes\AlumniaNotes\AlumniaNotes\AlumniaNotes\obj\Debug\net8.0-windows7.0\vistas\AlumnoView.g.cs
 C:\Users\Usuario\Desktop\DAM2\tfg\PROYECTO\Alumnia Notes\AlumniaNotes\AlumniaNotes\AlumniaNotes\obj\Debug\net8.0-windows7.0\vistas\AsignaturasView.g.cs
-C:\Users\Usuario\Desktop\DAM2\tfg\PROYECTO\Alumnia Notes\AlumniaNotes\AlumniaNotes\AlumniaNotes\obj\Debug\net8.0-windows7.0\vistas\AsignaturaView.g.cs
 C:\Users\Usuario\Desktop\DAM2\tfg\PROYECTO\Alumnia Notes\AlumniaNotes\AlumniaNotes\AlumniaNotes\obj\Debug\net8.0-windows7.0\vistas\AsistenciasView.g.cs
 C:\Users\Usuario\Desktop\DAM2\tfg\PROYECTO\Alumnia Notes\AlumniaNotes\AlumniaNotes\AlumniaNotes\obj\Debug\net8.0-windows7.0\vistas\AsistenciaView.g.cs
 C:\Users\Usuario\Desktop\DAM2\tfg\PROYECTO\Alumnia Notes\AlumniaNotes\AlumniaNotes\AlumniaNotes\obj\Debug\net8.0-windows7.0\vistas\CalificacionesView.g.cs
+C:\Users\Usuario\Desktop\DAM2\tfg\PROYECTO\Alumnia Notes\AlumniaNotes\AlumniaNotes\AlumniaNotes\obj\Debug\net8.0-windows7.0\vistas\CalificacionView.g.cs
+C:\Users\Usuario\Desktop\DAM2\tfg\PROYECTO\Alumnia Notes\AlumniaNotes\AlumniaNotes\AlumniaNotes\obj\Debug\net8.0-windows7.0\vistas\LoginView.g.cs
 C:\Users\Usuario\Desktop\DAM2\tfg\PROYECTO\Alumnia Notes\AlumniaNotes\AlumniaNotes\AlumniaNotes\obj\Debug\net8.0-windows7.0\vistas\MainView.g.cs
 C:\Users\Usuario\Desktop\DAM2\tfg\PROYECTO\Alumnia Notes\AlumniaNotes\AlumniaNotes\AlumniaNotes\obj\Debug\net8.0-windows7.0\vistas\ReportesView.g.cs
 C:\Users\Usuario\Desktop\DAM2\tfg\PROYECTO\Alumnia Notes\AlumniaNotes\AlumniaNotes\AlumniaNotes\obj\Debug\net8.0-windows7.0\App.g.cs

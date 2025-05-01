@@ -26,26 +26,26 @@
                       ItemsSource="{Binding Alumnos}"
                       SelectedItem="{Binding SelectedAlumno}"
                       DisplayMemberPath="NombreCompleto"
-                      PlaceholderText="Seleccionar alumno..."/>
+                      />
             <ComboBox Width="200" 
                       ItemsSource="{Binding Asignaturas}"
                       SelectedItem="{Binding SelectedAsignatura}"
                       DisplayMemberPath="Nombre"
-                      PlaceholderText="Seleccionar asignatura..."
+                      
                       Margin="10,0"/>
             <ComboBox Width="200" 
                       ItemsSource="{Binding TiposReporte}"
                       SelectedItem="{Binding TipoReporte}"
                       DisplayMemberPath="Nombre"
-                      PlaceholderText="Tipo de reporte..."
+                      
                       Margin="10,0"/>
             <DatePicker Width="150" 
                         SelectedDate="{Binding FechaInicio}"
-                        PlaceholderText="Fecha inicio"
+                        
                         Margin="10,0"/>
             <DatePicker Width="150" 
                         SelectedDate="{Binding FechaFin}"
-                        PlaceholderText="Fecha fin"
+                        
                         Margin="10,0"/>
             <Button Content="Generar" 
                     Command="{Binding GenerateCommand}"
@@ -81,7 +81,7 @@
                     <StackPanel Grid.Row="0" 
                                Orientation="Horizontal" 
                                Background="#F5F5F5"
-                               Padding="10">
+                               >
                         <TextBlock Text="{Binding ReportTitle}" 
                                  FontSize="16" 
                                  FontWeight="Bold"/>
@@ -173,10 +173,7 @@
         <Grid Grid.Row="0" Grid.RowSpan="2" 
               Background="#80000000"
               Visibility="{Binding IsLoading, Converter={StaticResource BooleanToVisibilityConverter}}">
-            <ProgressBar IsIndeterminate="True" 
-                         Width="100" 
-                         Height="100"
-                         Style="{StaticResource {x:Static ProgressBar.StyleKey}}"/>
+            
         </Grid>
     </Grid>
 </Window> 
