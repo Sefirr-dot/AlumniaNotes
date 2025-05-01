@@ -21,9 +21,9 @@
 
         <!-- Panel izquierdo con imagen -->
         <Grid Grid.Column="0" Background="#FF1E88E5">
-            <!--  <Image Source="/Resources/login_image.png" 
+            <Image Source="/Resources/login_image.png" 
                    Stretch="Uniform" 
-                   Margin="20"/> -->
+                   Margin="20"/>
         </Grid>
 
         <!-- Panel derecho con formulario -->
@@ -46,7 +46,12 @@
                         Height="40"
                         Padding="10"/>
 
-                <PasswordBox x:Name="txtPassword"/>
+                <PasswordBox x:Name="txtPassword"
+                           Password="{Binding Password, UpdateSourceTrigger=PropertyChanged}"
+                           
+                           Margin="0,0,0,20"
+                           Height="40"
+                           Padding="10"/>
 
                 <Button Content="Iniciar Sesión"
                         Command="{Binding LoginCommand}"
@@ -59,10 +64,12 @@
                 <TextBlock Text="{Binding ErrorMessage}"
                          Foreground="Red"
                          TextWrapping="Wrap"
-                         HorizontalAlignment="Center"/>
+                         HorizontalAlignment="Center"
+                         Visibility="{Binding HasError, Converter={StaticResource BooleanToVisibilityConverter}}"/>
 
                 <ProgressBar IsIndeterminate="True"
-                           Height="4"/>
+                           Height="4"
+                           Visibility="{Binding IsLoading, Converter={StaticResource BooleanToVisibilityConverter}}"/>
             </StackPanel>
         </Grid>
     </Grid>

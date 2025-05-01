@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlumniaNotes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bc2a4324995ca15f609947112843241799a5373")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53d35cc0c3e6cde2901f54818a1cf3ac862a4f92")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlumniaNotes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlumniaNotes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

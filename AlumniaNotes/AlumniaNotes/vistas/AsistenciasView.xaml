@@ -98,7 +98,8 @@
                     Background="White"
                     BorderBrush="#FFE0E0E0"
                     BorderThickness="1"
-                    Padding="20">
+                    Padding="20"
+                    Visibility="{Binding AsistenciaSeleccionada, Converter={StaticResource ObjectToVisibilityConverter}}">
                 <StackPanel>
                     <TextBlock Text="Detalles de la Asistencia" 
                              FontSize="18" 

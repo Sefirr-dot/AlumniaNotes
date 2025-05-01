@@ -82,7 +82,8 @@
                     Background="White"
                     BorderBrush="#FFE0E0E0"
                     BorderThickness="1"
-                    Padding="20">
+                    Padding="20"
+                    Visibility="{Binding AsignaturaSeleccionada, Converter={StaticResource ObjectToVisibilityConverter}}">
                 <StackPanel>
                     <TextBlock Text="Detalles de la Asignatura" 
                              FontSize="18" 
