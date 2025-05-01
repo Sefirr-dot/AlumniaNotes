@@ -1,0 +1,123 @@
+<UserControl x:Class="AlumniaNotes.vistas.AsignaturasView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AlumniaNotes.vistas"
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1030">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Barra de herramientas -->
+        <StackPanel Grid.Row="0" 
+                    Orientation="Horizontal" 
+                    Margin="0,0,0,20">
+            <TextBox Width="300" 
+                     Text="{Binding TextoBusqueda, UpdateSourceTrigger=PropertyChanged}"
+                     
+                     Margin="0,0,10,0"/>
+            
+            <Button Content="Agregar Asignatura" 
+                    Command="{Binding AgregarAsignaturaCommand}"
+                    Style="{StaticResource PrimaryButtonStyle}"/>
+        </StackPanel>
+
+        <!-- Lista de Asignaturas -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Lista -->
+            <DataGrid ItemsSource="{Binding Asignaturas}"
+                      SelectedItem="{Binding AsignaturaSeleccionada}"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      GridLinesVisibility="None"
+                      SelectionMode="Single"
+                      SelectionUnit="FullRow">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" 
+                                      Binding="{Binding Id}" 
+                                      Width="Auto"/>
+                    <DataGridTextColumn Header="Nombre" 
+                                      Binding="{Binding Nombre}" 
+                                      Width="*"/>
+                    <DataGridTextColumn Header="Código" 
+                                      Binding="{Binding Codigo}" 
+                                      Width="*"/>
+                    <DataGridTextColumn Header="Créditos" 
+                                      Binding="{Binding Creditos}" 
+                                      Width="*"/>
+                    <DataGridTemplateColumn Width="Auto">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Content="Editar" 
+                                            Command="{Binding DataContext.EditarAsignaturaCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}"
+                                            CommandParameter="{Binding}"
+                                            Style="{StaticResource SecondaryButtonStyle}"/>
+                                    <Button Content="Eliminar" 
+                                            Command="{Binding DataContext.EliminarAsignaturaCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}"
+                                            CommandParameter="{Binding}"
+                                            Style="{StaticResource DangerButtonStyle}"
+                                            Margin="5,0,0,0"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <!-- Formulario de Asignatura -->
+            <Border Grid.Column="1" 
+                    Width="400" 
+                    Margin="20,0,0,0"
+                    Background="White"
+                    BorderBrush="#FFE0E0E0"
+                    BorderThickness="1"
+                    Padding="20"
+                    Visibility="{Binding AsignaturaSeleccionada, Converter={StaticResource ObjectToVisibilityConverter}}">
+                <StackPanel>
+                    <TextBlock Text="Detalles de la Asignatura" 
+                             FontSize="18" 
+                             FontWeight="Bold" 
+                             Margin="0,0,0,20"/>
+
+                    <TextBlock Text="Nombre" 
+                             Margin="0,0,0,5"/>
+                    <TextBox Text="{Binding AsignaturaSeleccionada.Nombre, UpdateSourceTrigger=PropertyChanged}"
+                             Margin="0,0,0,10"/>
+
+                    <TextBlock Text="Código" 
+                             Margin="0,0,0,5"/>
+                    <TextBox Text="{Binding AsignaturaSeleccionada.Codigo, UpdateSourceTrigger=PropertyChanged}"
+                             Margin="0,0,0,10"/>
+
+                    <TextBlock Text="Créditos" 
+                             Margin="0,0,0,5"/>
+                    <TextBox Text="{Binding AsignaturaSeleccionada.Creditos, UpdateSourceTrigger=PropertyChanged}"
+                             Margin="0,0,0,10"/>
+
+                    <TextBlock Text="Descripción" 
+                             Margin="0,0,0,5"/>
+                    <TextBox Text="{Binding AsignaturaSeleccionada.Descripcion, UpdateSourceTrigger=PropertyChanged}"
+                             TextWrapping="Wrap"
+                             AcceptsReturn="True"
+                             Height="100"
+                             Margin="0,0,0,20"/>
+
+                    <Button Content="Guardar" 
+                            Command="{Binding GuardarAsignaturaCommand}"
+                            Style="{StaticResource PrimaryButtonStyle}"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl> 

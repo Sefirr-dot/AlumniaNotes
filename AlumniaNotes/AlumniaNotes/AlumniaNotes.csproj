@@ -2,10 +2,11 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <UserSecretsId>8ba70724-f37f-47af-90b8-9961cfdcc1be</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,18 +17,37 @@
 
   <ItemGroup>
     <Folder Include="models\" />
-    <Folder Include="viewModels\" />
+    <Folder Include="viewmodels\" />
+    <Folder Include="converters\" />
     <Folder Include="singleton\" />
     <Folder Include="repositorio\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="images\background.jpg" />
-    <Resource Include="images\logo.ico" />
+    <Compile Include="converters\ValueConverters.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.1" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.4" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\background.jpg" />
+    <Resource Include="images\logo.ico" />
     <Resource Include="images\logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ResourceDictionary Include="styles/ButtonStyles.xaml" />
   </ItemGroup>
 
 </Project>

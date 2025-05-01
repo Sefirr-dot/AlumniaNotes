@@ -1,0 +1,134 @@
+<Window x:Class="AlumniaNotes.vistas.AsignaturaView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlumniaNotes"
+        xmlns:converters="clr-namespace:AlumniaNotes.converters;assembly=AlumniaNotes"
+        mc:Ignorable="d"
+        Title="Gestión de Asignaturas" Height="600" Width="1000"
+        WindowStartupLocation="CenterScreen">
+    
+    <Window.Resources>
+        <converters:ObjectToVisibilityConverter x:Key="ObjectToVisibilityConverter"/>
+        <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        <converters:InverseBooleanConverter x:Key="InverseBooleanConverter"/>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Toolbar -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
+            <TextBox Width="200" 
+                     Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
+                     Tag="Buscar asignatura..."/>
+            <Button Content="Nuevo" 
+                    Command="{Binding AddCommand}"
+                    Style="{StaticResource PrimaryButtonStyle}"
+                    Margin="10,0"/>
+            <Button Content="Exportar" 
+                    Command="{Binding ExportCommand}"
+                    Style="{StaticResource SecondaryButtonStyle}"
+                    Margin="10,0"/>
+        </StackPanel>
+
+        <!-- Main Content -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- DataGrid -->
+            <DataGrid ItemsSource="{Binding Asignaturas}"
+                      SelectedItem="{Binding SelectedAsignatura}"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      GridLinesVisibility="None"
+                      Margin="10">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto"/>
+                    <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}" Width="*"/>
+                    <DataGridTextColumn Header="Código" Binding="{Binding Codigo}" Width="*"/>
+                    <DataGridTextColumn Header="Créditos" Binding="{Binding Creditos}" Width="Auto"/>
+                    <DataGridTextColumn Header="Profesor" Binding="{Binding Profesor.NombreCompleto}" Width="*"/>
+                    <DataGridTemplateColumn Width="Auto">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Content="Editar" 
+                                            Command="{Binding DataContext.EditCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                                            CommandParameter="{Binding}"
+                                            Style="{StaticResource SecondaryButtonStyle}"
+                                            Margin="0,0,5,0"/>
+                                    <Button Content="Eliminar" 
+                                            Command="{Binding DataContext.DeleteCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                                            CommandParameter="{Binding}"
+                                            Style="{StaticResource DangerButtonStyle}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <!-- Form -->
+            <Border Grid.Column="1" 
+                    Width="300" 
+                    Background="#F5F5F5"
+                    Visibility="{Binding SelectedAsignatura, Converter={StaticResource ObjectToVisibilityConverter}}">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Detalles de la Asignatura" 
+                             FontSize="16" 
+                             FontWeight="Bold"
+                             Margin="0,0,0,10"/>
+
+                    <StackPanel Grid.Row="1">
+                        <TextBlock Text="Nombre" Margin="0,5,0,0"/>
+                        <TextBox Text="{Binding SelectedAsignatura.Nombre, UpdateSourceTrigger=PropertyChanged}"/>
+
+                        <TextBlock Text="Código" Margin="0,5,0,0"/>
+                        <TextBox Text="{Binding SelectedAsignatura.Codigo, UpdateSourceTrigger=PropertyChanged}"/>
+
+                        <TextBlock Text="Créditos" Margin="0,5,0,0"/>
+                        <TextBox Text="{Binding SelectedAsignatura.Creditos, UpdateSourceTrigger=PropertyChanged}"/>
+
+                        <TextBlock Text="Profesor" Margin="0,5,0,0"/>
+                        <ComboBox ItemsSource="{Binding Profesores}"
+                                  SelectedItem="{Binding SelectedAsignatura.Profesor}"
+                                  DisplayMemberPath="NombreCompleto"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button Content="Guardar" 
+                                Command="{Binding SaveCommand}"
+                                Style="{StaticResource PrimaryButtonStyle}"
+                                Margin="0,0,5,0"/>
+                        <Button Content="Cancelar" 
+                                Command="{Binding CancelCommand}"
+                                Style="{StaticResource SecondaryButtonStyle}"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <!-- Loading Indicator -->
+        <Grid Grid.Row="0" Grid.RowSpan="2" 
+              Background="#80000000"
+              Visibility="{Binding IsLoading, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <ProgressBar IsIndeterminate="True" 
+                         Width="100" 
+                         Height="100"/>
+        </Grid>
+    </Grid>
+</Window> 
